@@ -1,6 +1,7 @@
 <template>
     <div class="app">
-        <date-picker :date="date"/>
+        <!-- <date-picker :date="date" @choose-date="changeDate"/> -->
+        <date-picker v-model="date"/>
     </div>
     
 </template>
@@ -16,7 +17,8 @@ export default {
         return {
             date:new Date()
         }
-    }
+    },
+    
 }
 </script>
 
